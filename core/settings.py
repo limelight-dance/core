@@ -6,12 +6,18 @@ SECRET_KEY = 'a%5cb20uhnfwol1ipk6$i$4*-a+#km1(-6#ri_gp9e1zvy6u*+'
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['limelight-dance-core.herokuapp.com']
+ALLOWED_HOSTS = [
+    'limelight-dance-core.herokuapp.com',
+]
 
 INSTALLED_APPS = [
     'api',
     'rest_framework',
     'corsheaders',
+]
+
+MIDDLEWARE = [
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'core.urls'
@@ -25,4 +31,6 @@ DATABASES = {
     }
 }
 
-CORS_ORIGIN_WHITELIST = ['https://limelight-dance-ui.herokuapp.com']
+CORS_ORIGIN_WHITELIST = [
+    'https://limelight-dance-ui.herokuapp.com',
+]
