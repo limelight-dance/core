@@ -29,3 +29,10 @@ python manage.py migrate
 ```
 python manage.py runserver
 ```
+### Deploying
+```sh
+# You only need to run the folling line once
+heroku git:remote -a limelight-dance-core
+
+git push heroku master
+```
