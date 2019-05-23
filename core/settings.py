@@ -25,4 +25,4 @@ DATABASES = {
     }
 }
 
-CORS_ORIGIN_WHITELIST = ('limelight-dance-ui.herokuapp.com')
+CORS_ORIGIN_WHITELIST = ['https://limelight-dance-ui.herokuapp.com']
