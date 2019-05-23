@@ -10,6 +10,7 @@ ALLOWED_HOSTS = ['limelight-dance-core.herokuapp.com']
 
 INSTALLED_APPS = [
     'api',
+    'rest_framework',
 ]
 
 ROOT_URLCONF = 'core.urls'
