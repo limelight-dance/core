@@ -33,4 +33,5 @@ DATABASES = {
 
 CORS_ORIGIN_WHITELIST = [
     'https://limelight-dance-ui.herokuapp.com',
+    'http://localhost:8080',
 ]
